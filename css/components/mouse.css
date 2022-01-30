@@ -1,6 +1,6 @@
 .mouse {
     display: inline-block;
-    font-size: 1.5px;
+    font-size: 1.3px;
     width: 26em;
     height: 40em;
     text-align: center;
@@ -26,7 +26,6 @@
         opacity: 1;
     }
     35% {
-        margin-top: 16em;
         opacity: 1;
     }
     100% {

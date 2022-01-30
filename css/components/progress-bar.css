@@ -1,19 +1,11 @@
 .progress-bar {
-display: inline-block;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .progress-bar > .top {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.progress-bar > .top > .title {
-    float: left;
-}
-
-.progress-bar > .top > .value {
-    float: right;
+    display: flex;
+    justify-content: space-between;
 }
 
 .progress-bar > .bottom {
@@ -26,7 +18,6 @@ width: 100%;
 .progress-bar > .bottom > .bar {
     width: 90%;
     height: 100%;
-
 }
 
 .progress-bar .bar > .loading {

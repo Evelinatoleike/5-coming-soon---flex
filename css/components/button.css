@@ -2,12 +2,13 @@
     padding: 0.8em 1em;
     font-size: 20px;
     line-height: 1em;
-    color: white;
     text-decoration: none;
+    text-align: center;
+    color: #fff;
     background-color: var(--secondary-color);
     border: none;
     border-radius: 0.1em;
-    cursor:pointer;
+    cursor: pointer;
     box-shadow: 0 2px 8px 1px #0005;
 }
 .btn + .btn {
@@ -17,7 +18,7 @@
 .btn.btn-round {
     border-radius: 1.3em;
 }
-.btn.btn-round.fa {
+.btn.btn-round.btn-icon {
     width: 1.3em;
     height: 1.3em;
     margin-top: -0.05em;
