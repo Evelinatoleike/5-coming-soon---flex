@@ -1,0 +1,206 @@
+/* base */
+@import '../base/reset.css';
+@import '../base/variables.css';
+@import '../base/layout.css';
+
+/* 3rd-party */
+@import '../components/font-awesome.min.css';
+
+/* components */
+@import '../components/button.css';
+@import '../components/clock.css';
+@import '../components/form.css';
+@import '../components/mouse.css';
+@import '../components/progress-bar.css';
+
+/* CUSTOM STYLE BELOW THIS COMMENT, FOR THIS PAGE */
+/* HERO: start */
+.hero {
+    padding-bottom: 30px;
+    background-image: url(../../img/banner-1.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment:fixed;
+}
+
+.hero > .row-short {
+    text-align: center;
+}
+
+.hero .logo {
+    margin-bottom: 45px;
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.hero .main-title {
+    font-size: 44px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.hero .main-description {
+    margin-bottom: 43px;
+    font-size: 18px;
+    color: grey;
+}
+
+.hero .clock {
+    margin-bottom: 45px;
+}
+.hero .form {
+    width: 90%;
+    margin: 0 5% 15px;
+}
+
+hero .form > .input {
+    color: white;
+    border-color: white;
+}
+
+.hero .form > .input::placeholder {
+    color: white;
+}
+
+/* HERO: end */
+
+/* MAIN CONTENT: start */
+.column > * {
+    margin-bottom: 20px;
+}
+
+.column > *:last-child {
+    margin-bottom: 0;
+}
+.content-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 1.2em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.content-description {
+    font-size:17px;
+    color: grey;
+}
+.content-description > .link {
+color: var(--secondary-color);
+text-decoration: none;
+}
+.content-description > .link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+main .form > button {
+    float: right;
+}
+
+@media (min-width: 900px) {
+    main .form > input.input {
+        width: calc(50% - 10px);
+    }
+    main .form > input:last-of-type {
+        float: right;
+    }
+}
+/* MAIN CONTENT: end */
+
+/* FOOTER: start */
+footer.container {
+    padding-top: 0;
+    font-size: 17px;
+    text-align: center;
+    color: #fff8;
+}
+
+.socials {
+    padding: 15px 0;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+
+.socials > .social {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.socials > .fa:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+footer .finish-trio {
+    display: inline-block;
+}
+
+footer .finish-trio > p {
+    float: left;
+    padding: 0 10px;
+    position: relative;
+}
+
+footer .logo {
+    max-height: 50px;
+    width: 100%;
+    margin: 50px 0;
+    object-fit: contain;
+    object-position: top;
+}
+
+footer .finish-trio > p::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 70%;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+footer .finish-trio > p:first-child::before {
+    display: none;
+}
+
+footer .link {
+    color:white;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    footer .finish-trio > p {
+        width: 100%;
+    }
+    footer .finish-trio > p::before {
+        display: none;
+    }
+
+/* FOOTER: end */
+
+.back-to-top {
+    /* position: fixed;
+    bottom: 40px;
+    right: 40px; */
+    position: absolute;
+    top: -0.8em;
+    right: -0.4em;
+}
+
+@media (max-width: 700px) {
+    .back-to-top {
+        display: none;
+    }
+}
